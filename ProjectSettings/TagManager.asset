@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Compasses
+    uniqueID: 2140447759
+    locked: 0
+  - name: Needles
+    uniqueID: 1160169845
+    locked: 0

@@ -10,13 +10,10 @@ using UnityEngine;
 public class EnvironmentController : MonoBehaviour
 {
     public Transform rooms;
-    public AudioSource play;
 
     // Start is called before the first frame update
     void Start()
     {
-        play = GetComponent<AudioSource>();
-        play.Play(0);
         foreach (Transform room in rooms) {
             foreach (Transform obj in room) {
                 obj.gameObject.SetActive(false);
