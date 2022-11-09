@@ -7,7 +7,6 @@ using UnityEngine;
 */
 public class ShowRooms : MonoBehaviour
 {
-    public Transform doors;
     public int id;
 
     /**
@@ -17,13 +16,6 @@ public class ShowRooms : MonoBehaviour
         confusion once you enter the room.
     */
     private void OnTriggerEnter(Collider other) {
-        foreach (Transform door in doors) {
-            DoorID doorID = door.GetComponent<DoorID>();
-            if (!(id == doorID.getID())) {
-                door.gameObject.SetActive(false);
-            }
-        }
-
         foreach (Transform obj in this.transform) {
             obj.gameObject.SetActive(true);
         }
