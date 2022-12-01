@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HandController : MonoBehaviour
 {
+    private bool isItOn = true;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -13,16 +15,16 @@ public class HandController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger) >= 0.3f) {
-            this.GetComponent<BoxCollider>().enabled = true;
-        }
+        if (OVRInput.GetDown(OVRInput.Button.One)) {
+            if (isItOn) {
+                this.GetComponent<BoxCollider>().enabled = true;
+                isItOn = false;
+            }
 
-        else if (OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) >= 0.3f) {
-            this.GetComponent<BoxCollider>().enabled = true;
-        }
-
-        else {
-            this.GetComponent<BoxCollider>().enabled = false;
+            else {
+                this.GetComponent<BoxCollider>().enabled = true;
+                isItOn = true;
+            }
         }
     }
 }
