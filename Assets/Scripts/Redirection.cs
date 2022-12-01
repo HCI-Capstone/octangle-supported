@@ -9,7 +9,7 @@ public class Redirection : MonoBehaviour
     public float rotationGain = 10.0f;
     
     private Vector3 oldPhysicalPos;
-    private Vector3 oldPhysicalRot;
+    private float oldPhysicalRot;
     public bool turnTime = false;
 
 
@@ -17,7 +17,7 @@ public class Redirection : MonoBehaviour
     void Start()
     {
         oldPhysicalPos = transform.localPosition;
-        oldPhysicalRot = transform.localEulerAngles;
+        oldPhysicalRot = transform.localEulerAngles.y;
     }
 
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class Redirection : MonoBehaviour
         // }
 
         // Update old pos
-        oldPhysicalPos = transform.localPosition;
+        // oldPhysicalPos = transform.localPosition;
 
         // Get the change in physical position
         Vector3 deltaPhysicalPos = transform.localPosition - oldPhysicalPos;
@@ -49,18 +49,19 @@ public class Redirection : MonoBehaviour
         // Update old pos
         oldPhysicalPos = transform.localPosition;
 
-        
-        
-        // get eulerRotation.y for rotation
-        
-        //if (turnTime) {
-        // Vector3 deltaPhysicalRot = transform.localEulerAngles - oldPhysicalRot;
-        // Vector3 injectedRotation = deltaPhysicalRot * (rotationGain - 1.0f);
-        // trackingSpace.transform.Rotate(injectedRotation);
 
-        // oldPhysicalRot = transform.localEulerAngles;
-            
-        //}
+
+        // get eulerRotation.y for rotation
+
+        if (turnTime)
+        {
+            float deltaPhysicalRot = transform.localEulerAngles.y - oldPhysicalRot;
+            float injectedRotation = deltaPhysicalRot * (rotationGain - 1.0f);
+            trackingSpace.transform.Rotate(Vector3.up, injectedRotation);
+
+            oldPhysicalRot = transform.localEulerAngles.y;
+
+        }
     }
 
     private void OnTriggerEnter(Collider other) {
