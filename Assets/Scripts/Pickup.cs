@@ -6,8 +6,6 @@ public class Pickup : MonoBehaviour
 {
     public Transform controller;
     public bool pickedUp = false;
-    private bool on = false;
-    public GameObject compasses;
 
     // Start is called before the first frame update
     void Start()
@@ -21,18 +19,6 @@ public class Pickup : MonoBehaviour
         if (pickedUp == true) {
             transform.position = controller.position;
             transform.rotation = controller.rotation;
-        }
-
-        if (OVRInput.GetDown(OVRInput.Button.Two)) {
-            if (on) {
-                compasses.SetActive(false);
-                on = false;
-            }
-
-            else {
-                compasses.SetActive(true);
-                on = true;
-            }
         }
     }
 

@@ -9,12 +9,12 @@ public class PhysicalCompassController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.localRotation = Quaternion.Euler(0f, -22.5f, -tracking.localEulerAngles.y);
+        transform.localRotation = Quaternion.Euler(0f, 0f, -tracking.localEulerAngles.y);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.localRotation = Quaternion.Euler(0f, -22.5f, -tracking.localEulerAngles.y);
+        transform.localRotation = Quaternion.Euler(0f, 0f, -tracking.localEulerAngles.y);
     }
 }
