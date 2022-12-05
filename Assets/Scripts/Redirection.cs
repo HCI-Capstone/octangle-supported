@@ -5,8 +5,9 @@ using UnityEngine;
 public class Redirection : MonoBehaviour
 {
     public GameObject trackingSpace;
-    public float translationGain = 1.6f;
-    public float rotationGain = 2.0f;
+    public float translationGain = 1.0f;
+    public float rotationGain = 1.0f;
+    public float rotationGainWhenActive = 0.66f;
     
     private Vector3 oldPhysicalPos;
     private float oldPhysicalRot;
@@ -71,28 +72,47 @@ public class Redirection : MonoBehaviour
 
         // get eulerRotation.y for rotation
 
-        if (turnTime)
-        {
+        //if (turnTime)
+        //{
             float deltaPhysicalRot = transform.localEulerAngles.y - oldPhysicalRot;
+            if (Mathf.Abs(deltaPhysicalRot) > 180.0f)
+            {
+                deltaPhysicalRot = 360.0f - deltaPhysicalRot;
+            }
+
             float injectedRotation = deltaPhysicalRot * (rotationGain - 1.0f);
-            trackingSpace.transform.Rotate(Vector3.up, injectedRotation);
+            trackingSpace.transform.RotateAround(transform.position, Vector3.up, injectedRotation);
 
             oldPhysicalRot = transform.localEulerAngles.y;
 
-        }
+        //}
     }
 
-    // private static void boundaryCheck() {
-    //     if (OVRInput.GetDown(OVRInput.Button.One)) {
-    //         if (boundaryOn) {
-    //             OVRBoundary.SetVisible(false);
-    //             boundaryOn = false;
-    //         }
+    float degrees_bounded(float degIn)
+    {
+        while (degIn >= 360.0f)
+        {
+            degIn -= 360.0f;
+        }
 
-    //         else {
-    //             OVRBoundary.SetVisible(true);
-    //             boundaryOn = true;
-    //         }
-    //     }
-    // }
+        while (degIn < 0.0)
+        {
+            degIn += 360.0f;
+        }
+
+
+        return degIn;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Corner")
+            rotationGain = rotationGainWhenActive;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Corner")
+            rotationGain = 1.0f;
+    }
 }
