@@ -11287,26 +11287,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 480563275}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &484818867 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100004, guid: ce816f2e6abb0504092c23ed9b970dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 816102795}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &484818872
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484818867}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &486744141
 GameObject:
   m_ObjectHideFlags: 0
@@ -17954,6 +17934,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 14300000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -24247,9 +24231,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackingSpace: {fileID: 1125853751}
-  translationGain: 1.6
+  translationGain: 1.8
   rotationGain: 1
-  rotationGainWhenActive: 0.66
+  rotationGainWhenActive: 0.5
   turnTime: 1
   compassOn: 0
   compasses: {fileID: 244385597}
@@ -30599,13 +30583,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319665282}
-  m_LocalRotation: {x: 0, y: -0.5570205, z: 0, w: 0.83049875}
-  m_LocalPosition: {x: -0.22, y: 0, z: -0.12}
+  m_LocalRotation: {x: 0, y: -0.258819, z: 0, w: 0.9659259}
+  m_LocalPosition: {x: -0.34, y: 0, z: 0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 228111371}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: -67.7, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
 --- !u!54 &1319665284
 Rigidbody:
   m_ObjectHideFlags: 0

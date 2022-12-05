@@ -74,16 +74,22 @@ public class Redirection : MonoBehaviour
 
         //if (turnTime)
         //{
-            float deltaPhysicalRot = transform.localEulerAngles.y - oldPhysicalRot;
-            if (Mathf.Abs(deltaPhysicalRot) > 180.0f)
-            {
-                deltaPhysicalRot = 360.0f - deltaPhysicalRot;
-            }
+        float deltaPhysicalRot = transform.localEulerAngles.y - oldPhysicalRot;
+        float rotSign = Mathf.Sign(deltaPhysicalRot);
 
-            float injectedRotation = deltaPhysicalRot * (rotationGain - 1.0f);
-            trackingSpace.transform.RotateAround(transform.position, Vector3.up, injectedRotation);
+        if (deltaPhysicalRot < 0.0)
+        {
+            deltaPhysicalRot += 360.0f;
+        }
+        if (deltaPhysicalRot > 180.0f)
+        {
+            deltaPhysicalRot = 360.0f - deltaPhysicalRot;
+        }
 
-            oldPhysicalRot = transform.localEulerAngles.y;
+        float injectedRotation = deltaPhysicalRot * (rotationGain - 1.0f) * rotSign;
+        trackingSpace.transform.RotateAround(transform.position, Vector3.up, injectedRotation);
+
+        oldPhysicalRot = transform.localEulerAngles.y;
 
         //}
     }
