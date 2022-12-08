@@ -165,15 +165,11 @@ This is more useful in the case that your are using [Method 1](#method-1-run-bui
 
 # Brief Explanation of Project Files
 
+An explanation of some project files and details that may help you get started and comfortable with the layout of the Project.
+
 ## Scripts
 
 These are the Scripts that are currently being used to be aware of:
-
-FollowHead: 
-PhysicalCompass: 
-Redirection: 
-VirtualCompass: 
-
 
 ### FollowHead
 
