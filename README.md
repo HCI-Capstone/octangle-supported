@@ -12,6 +12,16 @@
   - [What is the Octangle?](#what-is-the-octangle)
   - [What is a Redirected Walking Experience?](#what-is-a-redirected-walking-experience)
   - [What are Virtual Reality Locomotion Techniques?](#what-are-virtual-reality-locomotion-techniques)
+    - [Terminology](#terminology)
+      - [Reposition](#reposition)
+      - [Reorientation](#reorientation)
+      - [Overt](#overt)
+      - [Subtle](#subtle)
+      - [Continuous](#continuous)
+      - [Discrete](#discrete)
+    - [Four types of Reposition](#four-types-of-reposition)
+    - [Four types of Reorientation](#four-types-of-reorientation)
+    - [References](#references)
   - [Goal](#goal)
   - [Infographic](#infographic)
 - [Prerequisites](#prerequisites)
@@ -69,6 +79,66 @@ The Octangle is a octagonal hallway with four equidistant doors that lead to fou
 - Redirected Walking is is a Virtual Reality Locomotion Technique that enables users to explore a virtual space that _feels_ larger than the physical space by applying manipulations to the Virtual Environment without the user noticing it.
 
 ## What are Virtual Reality Locomotion Techniques?
+
+Virtual Reality Locomotion Techniques aim to apply some sort of manipulation to the either the movements of the user or to the environment in order to enhance a VR Experience without the user knowing about the employment of these techniques, that is, we do not want to break immersion and in fact would like the user to be as oblivious as possible.
+
+### Terminology
+
+#### Reposition
+
+Manipulate correspondence between reality and virtual reality. Compress large Virtual Reality into smaller Reality.
+
+#### Reorientation
+
+Reorient the user away from collision (walls).
+
+#### Overt
+
+Easily noticed by user.
+
+#### Subtle
+
+Not easily noticed by user.
+
+#### Continuous
+
+Applied over time.
+
+#### Discrete
+
+Applied instantaneously.
+
+
+### Four types of Reposition
+
+1. Overt Continuous Reposition
+   - Translation about user position, normally disorienting, can be mitigated by contextualizing.
+2. Subtle Continuous Reposition
+   - Travel distances can be downscaled by 14% or upscaled by 26% without being noticeable.
+3. Overt Discrete Reposition
+   - Teleportation, disorientation can be mitigated through use of a portal (contextualizing).
+4. Subtle Discrete Reposition
+   - Stimulus in the peripherals can mask abrupt translations in the environment.
+
+### Four types of Reorientation
+
+1. Overt Continuous Reorientation
+   - Intervention when user approaches boundaries of physical space.
+   - The turn around is applied rotational gain.
+   - Example: 180° physical turn → 360° virtual turn.
+   - Visual distractors to avoid breaking presence.
+2. Subtle Continuous Reorientation
+   - Users can be physically turned 49° more or 20° less in VR without noticing.
+3. Overt Discrete Reorientation
+   - “Freeze-and-turn” resetting.
+4. Subtle Discrete Reorientation
+   - Change blindness allows the location of doors and other objects to move for convenience.
+
+### References
+
+- [[1]](./Papers/A%20Taxonomy%20for%20Deploying%20Redirection.pdf) A Taxonomy for Deploying Redirection Techniques in Immersive Virtual Environments
+- [[2]](./Papers/Estimation%20of%20Detection%20Thresholds.pdf) Estimation of Detection Thresholds for Redirected Walking Techniques
+- [[3]](./Papers/Estimation%20of%20Rotation%20Gain%20Thresholds%20Considering%20FOV%2C%20Gender%2C%20and%20Distractors.pdf) Estimation of Rotation Gain Thresholds Considering FOV, Gender, and Distractors
 
 ## Goal
 
