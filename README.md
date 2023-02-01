@@ -66,9 +66,13 @@ Under the direction and guidance of:
 
 ## Repository
 
-The repository containing the files can be found at the linked [Octangle GitHub Repository]().
+The repository containing the files can be found at the linked [Octangle GitHub Repository](https://github.com/HCI-Capstone/octangle-supported).
 
 # About
+
+<p align="center" width="100%">
+    <img src="Files/img/figure-1.png">
+</p>
 
 ## What is the Octangle?
 
@@ -146,10 +150,10 @@ The goal of the experience is to demonstrate how manipulating the one to one map
 
 ## Infographic
 
-For more information on the Octangle, check out this great infographic Delaney made by scanning the following QR Code.
+For more information on the Octangle, check out this great [Infographic](https://github.com/HCI-Capstone/octangle-supported/tree/main/Files/Infographic.pdf) Delaney made.
 
 <p align="center" width="100%">
-    <img src="./Assets/Images/QR_Code.png">
+    <img src="Files/img/figure-2.png">
 </p>
 
 # Prerequisites
