@@ -218,7 +218,7 @@ Set up is fairly straightforward with the Link Cable. You select Link Cable in t
 
 #### Air Link
 
-1. Have the Cculus desktop app downloaded.
+1. Have the Oculus desktop app downloaded.
 2. Log into your account.
 3. Make sure your headset is on and connected to the same wifi network as your computer.
 4. Open the quick settings menu on your headset by pressing the leftmost area of the menu in the headset.
