@@ -90,27 +90,27 @@ Virtual Reality Locomotion Techniques aim to apply some sort of manipulation to 
 
 #### Reposition
 
-Manipulate correspondence between reality and virtual reality. Compress large Virtual Reality into smaller Reality.
+- Manipulate correspondence between reality and virtual reality. Compress large Virtual Reality into smaller Reality.
 
 #### Reorientation
 
-Reorient the user away from collision (walls).
+- Reorient the user away from collision (walls).
 
 #### Overt
 
-Easily noticed by user.
+- Easily noticed by user.
 
 #### Subtle
 
-Not easily noticed by user.
+- Not easily noticed by user.
 
 #### Continuous
 
-Applied over time.
+- Applied over time.
 
 #### Discrete
 
-Applied instantaneously.
+- Applied instantaneously.
 
 
 ### Four types of Reposition
