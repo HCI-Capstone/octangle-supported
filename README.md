@@ -223,7 +223,7 @@ Set up is fairly straightforward with the Link Cable. You select Link Cable in t
 3. Make sure your headset is on and connected to the same wifi network as your computer.
 4. Open the quick settings menu on your headset by pressing the leftmost area of the menu in the headset.
    - Where your profile picture and wifi are located.
-5. lick "Oculus Link” in the headset.
+5. Click "Oculus Link" in the headset.
 6. Once the pop up menu in the headset opens, toggle "air link" to be on.
 7. If this is not an option, turn on air link capabilities under "experimental features".
 8. our pc should show up on the list, so click it and select connect to pair.
