@@ -19,8 +19,8 @@
       - [Subtle](#subtle)
       - [Continuous](#continuous)
       - [Discrete](#discrete)
-    - [Four types of Reposition](#four-types-of-reposition)
-    - [Four types of Reorientation](#four-types-of-reorientation)
+    - [Four Types of Reposition](#four-types-of-reposition)
+    - [Four Types of Reorientation](#four-types-of-reorientation)
     - [References](#references)
   - [Goal](#goal)
   - [Infographic](#infographic)
@@ -113,7 +113,7 @@ Virtual Reality Locomotion Techniques aim to apply some sort of manipulation to 
 - Applied instantaneously.
 
 
-### Four types of Reposition
+### Four Types of Reposition
 
 1. Overt Continuous Reposition
    - Translation about user position, normally disorienting, can be mitigated by contextualizing.
@@ -226,7 +226,7 @@ Set up is fairly straightforward with the Link Cable. You select Link Cable in t
 5. Click "Oculus Link" in the headset.
 6. Once the pop up menu in the headset opens, toggle "air link" to be on.
 7. If this is not an option, turn on air link capabilities under "experimental features".
-8. our pc should show up on the list, so click it and select connect to pair.
+8. Our PC should show up on the list, so click it and select connect to pair.
 9. Once the two devices are paired, you should be able to click launch from within the headset, and your connection will be active.
 
 ### Actually Running the Project
